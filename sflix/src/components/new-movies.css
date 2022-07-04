@@ -59,6 +59,7 @@
     align-items: center;
     background-color: #404757ff;
     padding: 7px 10px;
-    width: 115px;
+   width: 110px;
     border-radius: 3px;
+    font-size: 11px;
   }
