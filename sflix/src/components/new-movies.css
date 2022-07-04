@@ -41,6 +41,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    font-size: 11px;
   }
 
   .new-movies-quality {

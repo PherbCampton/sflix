@@ -119,16 +119,17 @@
   }
   .carousel-movie-title {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .carousel-movie-rating {
     display: flex;
     gap: 10px;
+    font-size: 11px;
   }
 
   .carousel-movie-description {
-    font-size: 12px;
+    font-size: 11px;
     text-align: left;
     max-width: 580px;
     color: #aaaaaaff;
