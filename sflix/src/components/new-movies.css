@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  .new-movies {
+    margin: 40px 15px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .new-movies-card {
+    background-color: bisque;
+    min-height: 140px;
+    min-width: 100px;
+  }
+
+  .new-movies-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+
+  .new-movies-description {
+  font-size: 11px;
+  color: #aaaaaa;
+    
+  }
+
+  .new-movies-top {
+    display: flex;
+    gap: 20px;
+  }
+
+  .new-movies-star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .new-movies-quality {
+    font-weight: 700;
+
+  }
+
+  .new-movies-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .watch-now {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #404757ff;
+    padding: 7px 10px;
+    width: 115px;
+    border-radius: 3px;
+  }
