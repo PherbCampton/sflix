@@ -11,7 +11,7 @@ export default function Navbar() {
              <div className="navbar">
                 <div className="container nav-container">
                     <div className="left-logo">
-                        <img src="./logo.png" width="30px" alt=""/>
+                        <img src="./logo.png" width="30px" alt="" className="logo1"/>
                         <div className="flex">
                             <div className="browse">
                                 <FontAwesomeIcon icon={faBars} fontSize="16px"/>

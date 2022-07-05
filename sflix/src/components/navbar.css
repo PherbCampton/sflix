@@ -175,7 +175,7 @@ input {
   display: flex;
  }
 
- img:first-child{
+ .logo1:first-child{
   display: none;
  }
 }
@@ -191,7 +191,7 @@ input {
    display: none;
   }
 
-  img:first-child{
+  .logo1:first-child{
     display: block;
    }
  }

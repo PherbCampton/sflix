@@ -7,7 +7,7 @@
   }
   
   .carousel {
-    width: 100vw;
+    width: 100%;
     height: 250px;
     position: relative;
   }
@@ -84,7 +84,7 @@
     position: absolute;
     align-items: flex-end;
     gap: 20px;
-    margin-top: -170px;
+    margin-top: -30px;
     margin-left: 15px;
   }
 
@@ -124,7 +124,7 @@
 
   .carousel-movie-rating {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     font-size: 11px;
   }
 
@@ -143,11 +143,17 @@
     .carousel {
      height: 300px;
     }
+    .carousel-bottom-section {
+        margin-top: -40px;
+    }
    }
 
    @media only screen and (min-width: 720px) {
     .carousel {
      height: 400px;
+    }
+    .carousel-bottom-section {
+        margin-top: -80px;
     }
    }
 
@@ -155,16 +161,15 @@
     .carousel-movie-description {
         display: none;
     }
-    .carousel-bottom-section {
-        margin-top: -90px;
-    }
    }
 
    @media only screen and (min-width: 1000px) {
     .carousel {
      height: 500px;
     }
-
+    .carousel-bottom-section {
+        margin-top: -150px;
+    }
    }
 
    @media only screen and (max-width: 1000px) {
@@ -173,11 +178,13 @@
         display: none;
     }
 
-    .carousel-bottom-section {
-        margin-top: -50px;
-    }
-
     .carousel-button {
         display: none;
+    }
+   }
+
+   @media only screen and (min-width: 1200px) {
+    .carousel-bottom-section {
+        margin-top: -110px;
     }
    }

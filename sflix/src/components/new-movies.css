@@ -13,9 +13,9 @@
   }
 
   .new-movies-card {
-    background-color: bisque;
+    background-color: #aaaaaa;
     height: 140px;
-    min-width: 100px;
+    width: 100px;
   }
 
   .new-movies-detail {
@@ -73,7 +73,97 @@
     align-items: center;
     background-color: #404757ff;
     padding: 7px 10px;
-   width: 110px;
+    width: 110px;
     border-radius: 3px;
     font-size: 11px;
   }
+
+  @media only screen and (min-width: 640px) {
+    .new-movies {
+        flex-direction: column;
+        width: 28%;
+    }
+    .new-movies-card {
+        height: 280px;
+        width: 200px;
+    }
+    .wrapper {
+        display: flex;
+    }
+    .new-movies-description {
+        width: inherit;
+        
+    }
+    .new-movies-title {
+        width: inherit
+    }
+   }
+
+   @media only screen and (min-width: 1000px) {
+    .new-movies {
+        flex-direction: row;
+        width: 28%;
+        position: relative;
+        text-overflow: ellipsis;
+    }
+    .new-movies-card {
+        display: block;
+        height: 140px;
+        width: 100px;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .new-movies-detail {
+        max-width: 200px;
+    }
+    .new-movies-description {
+
+    }
+    .new-movies-title {
+        width: auto;
+    }
+   }
+
+   @media only screen and (min-width: 1000px) {
+    .new-movies {
+        flex-direction: row;
+        width: 28%;
+        position: relative;
+        text-overflow: ellipsis;
+    }
+    .new-movies-card {
+        display: block;
+        height: 140px;
+        width: 100px;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .new-movies-detail {
+        max-width: 200px;
+    }
+   }
+
+   @media only screen and (min-width: 1200px) {
+    .App1 {
+        display: flex;
+        padding: 20px 10px;
+    }
+    .wrapper {
+        flex-direction: column;
+        background-color: #292d38ff;
+        background: linear-gradient(to bottom, rgba(41, 45, 56, 1.0) 10%, transparent 100%)
+    }
+    .carousel {
+        width: 850px;
+    }
+    .new-movies {
+       margin-top: 20px;
+    }
+    .new-movies-detail {
+        width: 200px;
+    }
+   }

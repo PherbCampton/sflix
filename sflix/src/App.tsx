@@ -14,8 +14,11 @@ function App() {
   return (
     <div className="App">
         <Navbar/>
-        <Carousel/>
-        <NewMovies/>
+        <div className='App1'>
+          <Carousel/>
+          <NewMovies/>
+        </div>
+
     </div>
   );
 }

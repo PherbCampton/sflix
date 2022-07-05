@@ -22,7 +22,7 @@ export default function NewMovies() {
         return (
         <div className="new-movies">
             <div className="new-movies-card">
-                <img src={"https://image.tmdb.org/t/p/w200" + item.poster_path} alt=""  className="new-movies-card"/>
+                <img src={"https://image.tmdb.org/t/p/w500" + item.poster_path} alt=""  className="new-movies-card"/>
             </div>
             <div className="new-movies-detail">
                 <div className="new-movies-top">
@@ -44,8 +44,8 @@ export default function NewMovies() {
       })
 
     return (
-        <>
+        <div className="wrapper">
         {movie}
-        </>
+        </div>
     )
 }
