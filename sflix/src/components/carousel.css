@@ -84,7 +84,7 @@
     position: absolute;
     align-items: flex-end;
     gap: 20px;
-    margin-top: -130px;
+    margin-top: -170px;
     margin-left: 15px;
   }
 
@@ -135,7 +135,7 @@
     color: #aaaaaaff;
 }
 
-.bold {
+  .bold {
     font-weight: 700;
 }
  
