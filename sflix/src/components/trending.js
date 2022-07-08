@@ -1,9 +1,29 @@
 import "./trending.css"
+import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faList, faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import Thumbnail from "./thumbnail"
 
 export default function Trending() {
+
+    const [popular, setPopular] = useState([]);
+
+    const url =
+        "https://api.themoviedb.org/3/trending/movie/day?api_key=61eb6a9222af515ea9dc3bb91650d558&language=en-US&page=1";
+    useEffect(() => {
+        fetchPopular()
+      },[]);
+    const fetchPopular = async () => {
+        const data = await fetch(url)
+        const movies = await data.json()
+        setPopular(movies.results.slice(0, 12))
+    }
+    
+    const movie = popular.map(item => {
+      return (
+      <Thumbnail key={item.id} item={item} />
+      )
+    })
 
 
     return(
@@ -28,18 +48,7 @@ export default function Trending() {
                 </div>
             </div>
             <div className="thumbs">
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
+                {movie} 
             </div>
         </div>
     )
