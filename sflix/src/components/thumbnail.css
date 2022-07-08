@@ -45,7 +45,7 @@
 
   .thumbnail-movie-title {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: left;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -56,7 +56,7 @@
   }
 
   .thumbnail-movie-quality {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px;
   }
   
