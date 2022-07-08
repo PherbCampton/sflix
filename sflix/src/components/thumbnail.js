@@ -8,7 +8,7 @@ export default function Thumbnail({item}) {
 
     return(
         <div className='thumbnail'>
-            <img src={"https://image.tmdb.org/t/p/w500" + item.poster_path} alt="" className='thumbnail-img'/>
+            <img src={"https://image.tmdb.org/t/p/w500" + item.poster_path} alt={item.original_title} className='thumbnail-img'/>
             <div className="thumbnail-details">
             <div className='thumbnail-top-details'>
                 <div className='thumbnail-star-rating'>
@@ -19,7 +19,7 @@ export default function Thumbnail({item}) {
                 <p className='thumbnail-movie-release-year'>2022</p>
             </div>
             <div className="thumbnail-movie-title-div">
-                <p className='thumbnail-movie-title'>{item.original_title}</p>
+                <p className='thumbnail-movie-title'>{item.original_title || item.original_name}</p>
             </div>
             <div className="thumbnail-watch-now">
                 <FontAwesomeIcon icon={faPlay} fontSize="14px" />

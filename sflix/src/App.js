@@ -7,11 +7,14 @@ import Carousel from './components/carousel'
 import NewMovies from './components/new-movies'
 import ShareWith from './components/share';
 import Trending from './components/trending';
+import Latest from './components/latest';
 
 library.add(faCoffee)
 
 
 function App() {
+  const showsUrl = "https://api.themoviedb.org/3/trending/tv/day?api_key=61eb6a9222af515ea9dc3bb91650d558&language=en-US&page=1"
+  const moviesUrl = "https://api.themoviedb.org/3/trending/movie/day?api_key=61eb6a9222af515ea9dc3bb91650d558&language=en-US&page=2"
 
   return (
     <div className="App">
@@ -23,6 +26,8 @@ function App() {
         </div>
         <ShareWith style='switch'/>
         <Trending/>
+        <Latest mode='Latest Movies' urls={moviesUrl}/>
+        <Latest mode='Latest Shows' urls={showsUrl}/>
 
     </div>
   );
