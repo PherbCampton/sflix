@@ -36,6 +36,7 @@
   .thumbnail-star-rating {
     display: flex;
     gap: 3px;
+    font-size: 11px;
   }
 
   .thumbnail-movie-title-div {
@@ -91,7 +92,7 @@
    @media only screen and (max-width: 480px) {
     .thumbnail-movie-title {
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 500;
     }
    } 
 
