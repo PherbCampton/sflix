@@ -7,15 +7,16 @@
   }
 
   .new-movies {
-    margin: 20px 15px;
     display: flex;
     gap: 20px;
+    margin-bottom: 15px;
   }
 
   .new-movies-card {
     background-color: #aaaaaa;
     height: 140px;
     width: 100px;
+    object-fit: cover;
   }
 
   .new-movies-detail {
@@ -78,17 +79,32 @@
     font-size: 11px;
   }
 
+  .wrapper {
+    margin: 0 17px;
+  }
+
+
   @media only screen and (min-width: 640px) {
     .new-movies {
         flex-direction: column;
-        width: 28%;
+        width: 100%; 
+        margin-bottom: 60px;
+      
     }
+    .new-movies:first-child {
+      flex-direction: column;
+      width: 31.21%
+    
+  }
     .new-movies-card {
-        height: 280px;
-        width: 200px;
+        width: auto;
+        max-width: 100%;
+        height: 100%;
     }
     .wrapper {
         display: flex;
+        gap: 20px;
+        margin: 10px;   
     }
     .new-movies-description {
         width: inherit;
@@ -102,7 +118,7 @@
    @media only screen and (min-width: 1000px) {
     .new-movies {
         flex-direction: row;
-        width: 28%;
+        width: 100%;
         position: relative;
         text-overflow: ellipsis;
     }
@@ -117,9 +133,6 @@
     }
     .new-movies-detail {
         max-width: 200px;
-    }
-    .new-movies-description {
-
     }
     .new-movies-title {
         width: auto;
@@ -132,7 +145,17 @@
         width: 28%;
         position: relative;
         text-overflow: ellipsis;
+        flex-direction: row;
+        width: 31.21%;
+        margin-right: 0;
     }
+
+    .new-movies:first-child {
+      flex-direction: row;
+      width: 31.21%;
+      margin-right: 0;
+    }
+
     .new-movies-card {
         display: block;
         height: 140px;
@@ -141,6 +164,7 @@
     .wrapper {
         display: flex;
         justify-content: space-between;
+        gap:10px;
     }
     .new-movies-detail {
         max-width: 200px;
@@ -151,18 +175,35 @@
     .App1 {
         display: flex;
         padding: 20px 10px;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
     }
     .wrapper {
         flex-direction: column;
         background-color: #292d38ff;
-        background: linear-gradient(to bottom, rgba(41, 45, 56, 1.0) 10%, transparent 100%)
+        background: linear-gradient(to bottom, rgba(41, 45, 56, 1.0) 10%, transparent 100%);
+        margin:0;
+        padding: 20px 20px 0 20px;
     }
     .carousel {
         width: 850px;
     }
     .new-movies {
-       margin-top: 20px;
+      width: auto;
+      margin-bottom: 25px;
     }
+
+    .new-movies-card {
+      display: block;
+      height: 140px;
+      width: 100px;
+  }
+
+    .new-movies:first-child {
+      width: auto;
+    }
+
     .new-movies-detail {
         width: 200px;
     }

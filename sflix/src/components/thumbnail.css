@@ -1,0 +1,114 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  .thumbnail {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    max-height: 100%;
+    width: 32%;
+    background-color: #292c34;
+    margin-bottom: 15px;
+  }
+
+  .thumbnail-details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  }
+
+  .thumbnail-img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+  }
+
+  .thumbnail-top-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #aaaaaaff;
+    font-weight: 200;
+  }
+
+  .thumbnail-star-rating {
+    display: flex;
+    gap: 3px;
+  }
+
+  .thumbnail-movie-title-div {
+    height: 35px;
+  }
+
+  .thumbnail-movie-title {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+  }
+
+  .thumbnail-movie-quality {
+    font-weight: 700;
+  }
+  
+  .thumbs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin: 10px;
+  }
+
+  .thumbnail-watch-now {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #404757ff;
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+  }
+
+  @media only screen and (max-width: 300px) {
+    .thumbnail-movie-quality {
+        display: none;
+    }
+   }  
+
+  @media only screen and (max-width: 400px) {
+    .thumbnail-movie-release-year {
+        display: none;
+    }
+   }  
+
+   @media only screen and (max-width: 480px) {
+    .thumbnail-movie-title {
+        font-size: 12px;
+        font-weight: 400;
+    }
+   } 
+
+  @media only screen and (min-width: 720px) {
+    .thumbnail {
+        width: 24%;
+    }
+   }
+
+   @media only screen and (max-width: 720px) {
+    .thumbnail-watch-now {
+        display: none;
+    }
+   }  
+
+   @media only screen and (min-width: 1200px) {
+    .thumbnail {
+        width: 16%;
+    }
+   }
