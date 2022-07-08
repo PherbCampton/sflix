@@ -5,7 +5,7 @@ import { faStar, faPlay } from '@fortawesome/free-solid-svg-icons'
 export default function Thumbnail() {
     return(
         <div className='thumbnail'>
-            <img src={"https://image.tmdb.org/t/p/w500" + "/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg"} alt="" className='thumbnail-img'/>
+            <img src={"https://image.tmdb.org/t/p/w200" + "/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg"} alt="" className='thumbnail-img'/>
             <div className="thumbnail-details">
             <div className='thumbnail-top-details'>
                 <div className='thumbnail-star-rating'>
