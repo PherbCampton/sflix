@@ -21,7 +21,7 @@
 
   .thumbnail-img {
     object-fit: cover;
-    height: auto;
+    height: fit-content;
     width: auto;
   }
 
