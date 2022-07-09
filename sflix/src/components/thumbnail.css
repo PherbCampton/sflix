@@ -39,6 +39,12 @@
     font-size: 11px;
   }
 
+  .thumbnail-movie-release-year {
+    width: 3.48ch;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
   .thumbnail-movie-title-div {
     height: 35px;
   }

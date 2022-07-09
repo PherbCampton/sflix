@@ -2,6 +2,8 @@ import "./thumbnail.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faPlay } from '@fortawesome/free-solid-svg-icons'
 
+
+
 export default function Thumbnail({item}) {
     
     let ratings = item.vote_average.toFixed(1)
@@ -16,7 +18,7 @@ export default function Thumbnail({item}) {
                     <p className='thumbnail-rating'>{ratings}</p>
                 </div>
                 <p className='thumbnail-movie-quality'>HD</p>
-                <p className='thumbnail-movie-release-year'>2022</p>
+                <p className='thumbnail-movie-release-year'>{item.release_date || item.first_air_date}</p>
             </div>
             <div className="thumbnail-movie-title-div">
                 <p className='thumbnail-movie-title'>{item.original_title || item.original_name}</p>

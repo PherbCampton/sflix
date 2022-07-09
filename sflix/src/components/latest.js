@@ -16,8 +16,6 @@ export default function Latest({mode, urls}) {
         setPopular(movies.results.slice(0, 12))
     }
 
-    console.log(popular)
-
     const movie = popular.map(item => {
       return (
       <Thumbnail key={item.id} item={item} />
