@@ -18,7 +18,7 @@ export default function Carousel() {
 
 
         const [popular, setPopular] = useState([]);
-        const url = `https://api.themoviedb.org/3/trending/movie/day?api_key=61eb6a9222af515ea9dc3bb91650d558&language=en-US&page=${count}`
+        const url = `https://api.themoviedb.org/3/trending/tv/day?api_key=61eb6a9222af515ea9dc3bb91650d558&language=en-US&page=${count}`
         useEffect(() => {
             fetchPopular()
         },[count]);
