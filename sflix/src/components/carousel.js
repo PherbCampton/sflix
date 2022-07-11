@@ -6,7 +6,7 @@ import Slide from "./slide"
 
 export default function Carousel() {
 
-        let [count, setCount] = useState(5)
+        let [count, setCount] = useState(3)
 
         function increment(){
             setCount(count + 1)
