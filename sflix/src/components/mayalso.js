@@ -2,31 +2,24 @@ import "./trending.css"
 import { useEffect, useState, useRef } from "react"
 import Thumbnail from "./thumbnail"
 
-export default function Latest({mode, urls, more}) {
+export default function MayAlso({urls}) {
 
     const [popular, setPopular] = useState([]);
-    const [second, setSecond] = useState([])
+
 
     const componentWillUnmount = useRef(false)
 
     const url = urls
     useEffect(() => {
         fetchPopular()
-        testapi()
         return () => {
             componentWillUnmount.current = true
         }
-      },[popular]);
+      },[url]);
 
-    const testapi = async() => {
-        const response = await fetch(more, { headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-           }});
-        const data = await response.json();
-        setSecond(data.results.slice(0, 4));
-
-    }
+      useEffect(()=> {
+        
+      })
 
     const fetchPopular = async () => {
         const data = await fetch(url, { headers : { 
@@ -34,7 +27,7 @@ export default function Latest({mode, urls, more}) {
             'Accept': 'application/json'
            }})
         const movies = await data.json() 
-        setPopular([...second, ...movies.results])
+        setPopular(movies.results)
         
     }
 
@@ -49,7 +42,7 @@ export default function Latest({mode, urls, more}) {
         <div>
             <div className='trending'>
                 <div>
-                    <h1 className="section-title">{mode}</h1>
+                    <h1 className="section-title">You may also like</h1>
                 </div>
             </div>
             <div className="thumbs">

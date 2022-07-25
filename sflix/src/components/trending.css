@@ -9,6 +9,7 @@
     align-items: flex-start ;
     margin: 30px 15px 30px 15px;
     gap: 20px;
+    max-width: 1366px;
 }
 
 .section-title {

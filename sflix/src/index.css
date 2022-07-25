@@ -1,7 +1,8 @@
 body {
   background-color: #1e2129ff;
   color: #ffffff;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

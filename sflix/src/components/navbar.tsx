@@ -1,4 +1,5 @@
 import "./navbar.css"
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from "@fortawesome/free-regular-svg-icons"
@@ -11,7 +12,7 @@ export default function Navbar() {
              <div className="navbar">
                 <div className="container nav-container">
                     <div className="left-logo">
-                        <img src="./logo.png" width="30px" alt="" className="logo1"/>
+                       <img src="./logo.png" width="30px" alt="" className="logo1"/>
                         <div className="flex">
                             <div className="browse">
                                 <FontAwesomeIcon icon={faBars} fontSize="16px"/>

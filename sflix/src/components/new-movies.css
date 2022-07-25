@@ -83,6 +83,13 @@
     margin: 0 17px;
   }
 
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
 
   @media only screen and (min-width: 640px) {
     .new-movies {
@@ -177,6 +184,7 @@
         padding: 20px 10px;
         justify-content: center;
         width: 100%;
+        max-width: 1590%;
         margin: 0 auto;
     }
     .wrapper {
@@ -187,10 +195,11 @@
         padding: 20px 20px 0 20px;
     }
     .carousel {
-        width: 850px;
+      width: 810px;;
+      position: relative;
     }
     .new-movies {
-      width: auto;
+      width: 100%;
       margin-bottom: 25px;
     }
 
@@ -205,6 +214,30 @@
     }
 
     .new-movies-detail {
-        width: 200px;
+        width: auto;
     }
+   }
+
+   @media only screen and (min-width: 1400px) {
+    .carousel {
+      width: 900px;;
+      position: relative;
+    }
+
+   }
+
+   @media only screen and (min-width: 1500px) {
+    .carousel {
+      width: 1000px;;
+      position: relative;
+    }
+
+   }
+
+   @media only screen and (min-width: 1590px) {
+    .carousel {
+      width: 1120px;;
+      position: relative;
+    }
+
    }

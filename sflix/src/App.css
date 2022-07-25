@@ -2,6 +2,7 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
+
 }
 
 .App-logo {
@@ -26,3 +27,8 @@
   color: white;
 }
 
+.thumbs {
+  max-width: 1570px;
+  display: flex;
+  justify-self: center;
+}
