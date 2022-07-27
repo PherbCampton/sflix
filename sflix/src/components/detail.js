@@ -15,7 +15,7 @@ export default function Detail({name, runtime, poster, ratings, overview, releas
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 10%, transparent 100%)"
+           
             }}>
 
             <div className="actions-list">

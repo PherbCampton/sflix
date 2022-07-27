@@ -7,7 +7,7 @@
     align-items: center;
     gap: 25px;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.65;
     color: #aaaaaa;
     padding: 15px;
     font-size: 11px;
@@ -47,6 +47,7 @@ span {
 
 .detailed-title {
     font-weight: 600;
+    font-size: 16px;
 }
 
 .detail-options {
@@ -57,6 +58,7 @@ span {
     gap: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
+    font-size: 10px;
 }
 
 .yellow {
@@ -105,6 +107,7 @@ span {
     margin-bottom: 30px;
     gap: 10px;
     color: #dddddd;
+    font-size: 10px;
 }
 
 .detailed-bottom-description,
@@ -126,6 +129,7 @@ span {
     flex-wrap: wrap;
     gap: 5px;
     margin-bottom: 5px;
+    font-size: 10px;
 }
 
 .watch-method {
@@ -155,6 +159,10 @@ span {
         align-items: flex-start;
     }
 
+    .detailed-title {
+        font-size: 24px;
+    }
+
     .detail-card {
         width: 180px;
         height: 266px;
@@ -164,6 +172,11 @@ span {
 
     .detail-options {
         gap: 30px;
+        font-size: 12px;
+    }
+
+    .detailed-description {
+        font-size: 12px;
     }
 
     .servers{
@@ -188,6 +201,11 @@ span {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .watch-methods {
+        font-size: 12px;
+    }
+
    }
 
    @media only screen and (min-width: 770px) {
