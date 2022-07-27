@@ -4,9 +4,8 @@ import { faShare, faHeart, faVideo, faPlay } from '@fortawesome/free-solid-svg-i
 import MayAlso from './mayalso'
 
 export default function Detail({name, runtime, poster, ratings, overview, released, background}) {
-
-
-
+   
+    const fixed = ratings
 
     return (
     <div>
@@ -20,7 +19,7 @@ export default function Detail({name, runtime, poster, ratings, overview, releas
 
             <div className="actions-list">
             <div className="actions">
-                <span>{ratings}</span>
+                <span>{fixed}</span>
                 <p>Rate it</p>
             </div>
             <div className="actions">
@@ -44,7 +43,7 @@ export default function Detail({name, runtime, poster, ratings, overview, releas
                 <FontAwesomeIcon icon={faVideo}/>
                 <p>Trailer</p>
                 </div>
-                <p className="yellow">IMDB: 6.1</p>
+                <p className="yellow">IMDB: {fixed}</p>
                 <p>{runtime} min</p>
             </div>
             <div className="servers">
